@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-const exec = require('child_process').exec
+const fs = require('fs')
+const process = require('process')
 const date = new Date()
 const currYear = date.getFullYear()
 const currMonth = date.getMonth() + 1
@@ -13,12 +14,11 @@ const prefixDate = currYear + '-' + toString(currMonth) + '-' + toString(currDay
 if(!args.length) return
 
 const fileName = prefixDate + args[0]
-exec('touch ' + fileName, (err, stdout, stderr) => {
+
+fs.writeFile(fileName, '', (err) => {
   if(err) {
     console.error(err)
     return
   }
   console.log(fileName + ' created!')
-  stdout && console.log(stdout)
-  stderr && console.error(stderr)
 })
