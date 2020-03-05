@@ -2,7 +2,6 @@
 'use strict'
 
 const fs = require('fs')
-const process = require('process')
 const date = new Date()
 const currYear = date.getFullYear()
 const currMonth = date.getMonth() + 1
