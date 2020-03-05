@@ -1,4 +1,4 @@
-# Today
+# Tday
 Create file with today prefix.
 
 ```
