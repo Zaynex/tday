@@ -1,5 +1,5 @@
 {
-  "name": "today",
+  "name": "tday",
   "version": "1.0.0",
   "description": "create file with today prefix",
   "bin": {
