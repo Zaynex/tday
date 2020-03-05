@@ -5,9 +5,10 @@
   "bin": {
     "today": "./bin/today.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zaynex/today.git"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "zaynex",
+  "license": "MIT"
 }
